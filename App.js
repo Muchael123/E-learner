@@ -16,11 +16,11 @@ export default function App() {
       "outfit-extralight": require("./assets/fonts/Outfit-ExtraLight.ttf"),
 
     });
-
+  const clerkKey = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY;
   return (
     <ClerkProvider
       publishableKey={
-        "pk_test_ZHluYW1pYy1maW5jaC05Mi5jbGVyay5hY2NvdW50cy5kZXYk"
+        clerkKey
       }
     >
       <View style={styles.container}>

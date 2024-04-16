@@ -1,6 +1,5 @@
 import { request, gql } from "graphql-request";
-const MasterUrl =
-    "https://api-ap-south-1.hygraph.com/v2/cluwn2bt51fzj07umva7kos6z/master";
+const MasterUrl = process.env.EXPO_PUBLIC_HYGRAPH_PUBLISHABLE_KEY;
   
 export const getCourseList = async (level) => {
     const query =
